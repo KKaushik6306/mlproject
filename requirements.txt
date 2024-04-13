@@ -4,4 +4,7 @@ seaborn
 matplotlib
 scikit-learn
 typing
+dill
+xgboost
+catboost
 -e .
