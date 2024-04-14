@@ -7,4 +7,5 @@ typing
 dill
 xgboost
 catboost
+flask
 -e .
