@@ -50,9 +50,9 @@ if __name__ == '__main__':
     a,b = obj.initiate_data_ingestion()
     data_transformation = DataTransformation()
     train_arr,test_arr,processor_path = data_transformation.initiate_data_transformation(a,b)
-    # model_trainer = ModelTrainer()
-    # model_trainer.initiate_model(train_arr,test_arr)
-    print('Done')
+    model_trainer = ModelTrainer()
+    model_trainer.initiate_model(train_arr,test_arr)
+    print('Completed')
 
 
 
