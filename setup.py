@@ -1,3 +1,5 @@
+#Buidling your ML project as package
+
 from setuptools import find_packages,setup
 import typing
 from typing import List
@@ -26,3 +28,6 @@ setup(
     packages=find_packages(),
     install_requires = get_requirements('requirements.txt')
 )
+
+
+
