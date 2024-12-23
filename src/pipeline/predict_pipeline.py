@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from src.exception import CustomException
 from src.utils import load_object
-
+import pickle
 
 class PredictPipeline:
     def __init__(self):
@@ -12,12 +12,18 @@ class PredictPipeline:
     def predict(self,features):
         try:
             print('Function Start')
-            model_path=os.path.join("artifacts","model.pkl")
-            preprocessor_path=os.path.join('artifacts','preprocessor.pkl')
+            #model_path=os.path.join("artifacts","model.pkl")
+            model_path = ""
+            #preprocessor_path=os.path.join('artifacts','preprocessor.pkl')
+            preprocessor_path='preprocessor.pkl'
             print("Before Loading")
             print(model_path)
-            model=load_object(file_path=model_path) #Load Model
-            preprocessor=load_object(file_path=preprocessor_path) #Load Preprocessor Object
+            # preprocessor=load_object(file_path=preprocessor_path)
+            # model=load_object(file_path=model_path) #Load Model
+            model=pickle.load(open('model.pkl','rb'))
+            preprocessor=pickle.load(open('preprocessor.pkl','rb'))
+            
+             #Load Preprocessor Object
             print("After Loading")
             data_scaled=preprocessor.transform(features) #Transform New Data
             preds=model.predict(data_scaled) #Predict based on new data

@@ -1,0 +1,33 @@
+{
+  "build": "h2eaa2aa_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vs2015_runtime >=14.40.33807"
+  ],
+  "extracted_package_dir": "C:\\Users\\dell\\Anaconda3\\pkgs\\vc-14.40-h2eaa2aa_1",
+  "features": "",
+  "files": [],
+  "fn": "vc-14.40-h2eaa2aa_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\dell\\Anaconda3\\pkgs\\vc-14.40-h2eaa2aa_1",
+    "type": 1
+  },
+  "md5": "f37ef4381071123903074612dad356f4",
+  "name": "vc",
+  "package_tarball_full_path": "C:\\Users\\dell\\Anaconda3\\pkgs\\vc-14.40-h2eaa2aa_1.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 9122,
+  "subdir": "win-64",
+  "timestamp": 1726064402583,
+  "track_features": "vc14",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/vc-14.40-h2eaa2aa_1.tar.bz2",
+  "version": "14.40"
+}
